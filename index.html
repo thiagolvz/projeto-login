@@ -17,24 +17,25 @@
                 <h1>Login</h1>
                 <p>Seja bem vindo(a) novamente. Faça login para acessar a sua conta e poder fazer as configurações no seu ambiente.</p>
                 <form action="login.php" method="post" autocomplete="on">
-                    <p>
+                    <div class="campo">
                     <span class="material-symbols-outlined">
                         person
-                    <label for="iemail"></label>
-                    <input type="email" name="email" id="iemail" autocomplete="email" placeholder="seu e-mail">
+                    
+                    <input type="email" name="email" id="iemail" autocomplete="email" placeholder="Seu e-mail" required maxlength="30">
+                    <label for="iemail">Login</label>
                         </span> 
-                    </p>
-                    <p>
+                    </div>
+                    <div class="campo">
                     <span class="material-symbols-outlined">
                         key
-                    <label for="ipassword"></label>
-                    <input type="password" name="password" id="ipassword" autocomplete="current-password" placeholder="sua senha">
+                    
+                    <input type="password" name="password" id="ipassword" autocomplete="current-password" placeholder="Sua senha" required minlength="6" maxlength="20">
+                    <label for="ipassword">Senha</label>
                         </span>
-                     </p>
-                     <p>
+                    </div>
                         <input type="submit" value="Entrar">
-                     </p>
-                     <p><input type="submit" value="Esqueci a senha "></p>
+                     
+                     <a href="Esqueci.html">Esqueci a senha </a> <i class="material-symbols-outlined">mail</i>
 
                 </form>
             </div>
